@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Online</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+  <header>
+      <button class="hamburguer" onclick="toggleMenu()">☰ </button>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar...">
+    </div>
+    <div class="icons">♡ 🛒</div>
+  </header>
+
+
+
+
+<!-- Menu lateral -->
+<aside class="filter-menu" id="filterMenu">
+    <h3>Filtrar por categoria</h3>
+    <ul>
+      <li onclick="toggleSubmenu('camisetasSubmenu')">Camisetas</li>
+<ul id="camisetasSubmenu" class="submenu">
+  <li onclick="filterProducts('Corinthians')">•Corinthians</li>
+  <li onclick="filterProducts('Palmeiras')">•Palmeiras</li>
+  <li onclick="filterProducts('SãoPaulo')">•São Paulo</li>
+  <li onclick="filterProducts('Santos')">•Santos</li>
+  <li onclick="filterProducts('Mostrar todas as camisetas')">•Todas as Camisetas</li>
+</ul>
+
+      <li onclick="filterProducts('Bermudas')">Bermudas</li>
+      <li onclick="filterProducts('Calças')">Calças</li>
+      <li onclick="filterProducts('Chuteiras')">Chuteiras</li>
+      <li onclick="filterProducts('Tênis')">Tênis</li>
+      <li onclick="filterProducts('Acessorios')">Acessórios</li>
+      <li onclick="filterProducts('Todos')">Mostrar Todos</li>
+    </ul>
+  </aside>
+
+  <div class="carousel-container">
+
+    <div class="carousel">
+      <img src="Carrossel/homem.png" alt="Promoção 1" class="carousel-img">
+      <img src="Carrossel/mulher.png" alt="Promoção 2" class="carousel-img">
+      <img src="Carrossel/senhor.png" alt="Promoção 3" class="carousel-img">
+      <img src="Carrossel/senhora.png" alt="Promoção 4" class="carousel-img">
+    </div>
+  
+  </div>
+
+
+  
+  
+ <div class="cards-container">
+
+              <!-- Camisas do Corinthians -->
+
+              
+  <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 1.png" alt="Corinthians 1">
+    </div>
+    <div class="info">
+      <h3>Corinthians 1</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 2.png" alt="Corinthians 2">
+    </div>
+    <div class="info">
+      <h3>Corinthians 2</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+    <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 3.png" alt="Corinthians 3">
+    </div>
+    <div class="info">
+      <h3>Corinthians 3</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 4.png" alt="Corinthians 4">
+    </div>
+    <div class="info">
+      <h3>Corinthians 4</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 5.png" alt="Corinthians 5">
+    </div>
+    <div class="info">
+      <h3>Corinthians 5</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 6.png" alt="Corinthians 6">
+    </div>
+    <div class="info">
+      <h3>Corinthians 6</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 7.png" alt="Corinthians 7">
+    </div>
+    <div class="info">
+      <h3>Corinthians 7</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Corinthians">
+    <div class="image-container">
+      <img src="Camisa Corinthians/Camisa Corinthians 8.png" alt="Corinthians 8">
+    </div>
+    <div class="info">
+      <h3>Corinthians 8</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+              <!-- Camisas do Palmeiras -->
+
+    <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 1.png" alt="Palmeiras 1">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 1</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 2.png" alt="Palmeiras 2">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 2</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 3.png" alt="Palmeiras 3">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 3</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 4.png" alt="Palmeiras 4">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 4</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 5.png" alt="Palmeiras 5">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 5</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 6.png" alt="Palmeiras 6">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 6</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 7.png" alt="Palmeiras 7">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 7</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas Palmeiras">
+    <div class="image-container">
+      <img src="Camisa Palmeiras/Camisa Palmeiras 8.png" alt="Palmeiras 8">
+    </div>
+    <div class="info">
+      <h3>Palmeiras 8</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+                <!-- Camisas do São Paulo -->
+
+   <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 1.png" alt="São Paulo 1"> 
+    </div>
+    <div class="info">
+      <h3>São Paulo 1</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 2.png" alt="São Paulo 2">
+    </div>
+    <div class="info">
+      <h3>São Paulo 2</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 3.png" alt="São Paulo 3">
+    </div>
+    <div class="info">
+      <h3>São Paulo 3</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 4.png" alt="São Paulo 4">
+    </div>
+    <div class="info">
+      <h3>São Paulo 4</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 5.png" alt="São Paulo 5 ">
+    </div>
+    <div class="info">
+      <h3>São Paulo 5</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 6.png" alt="São Paulo 6">
+    </div>
+    <div class="info">
+      <h3>São Paulo 6</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 7.png" alt="São Paulo 7">
+    </div>
+    <div class="info">
+      <h3>São Paulo 7</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Camisetas São Paulo">
+    <div class="image-container">
+      <img src="Camisa São Paulo/Camisa São Paulo 8.png" alt="São Paulo 8">
+    </div>
+    <div class="info">
+      <h3>São Paulo 8</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+              <!-- Camisas do Santos -->
+
+  <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 1.png" alt="Santos 1">
+    </div>
+    <div class="info">
+      <h3>Santos 1</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 2.png" alt="Santos 2">
+    </div>
+    <div class="info">
+      <h3>Santos 2</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 3.png" alt="Santos 3">
+    </div>
+    <div class="info">
+      <h3>Santos 3</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 4.png" alt="Santos 4">
+    </div>
+    <div class="info">
+      <h3>Santos 4</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 5.png" alt="Santos 5">
+    </div>
+    <div class="info">
+      <h3>Santos 5</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 6.png" alt="Santos 6">
+    </div>
+    <div class="info">
+      <h3>Santos 6</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 7.png" alt="Santos 7">
+    </div>
+    <div class="info">
+      <h3>Santos 7</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Camisetas">
+    <div class="image-container">
+      <img src="Camisa Santos/Camisa Santos 8.png" alt="Santos ">
+    </div>
+    <div class="info">
+      <h3>Santos 8</h3>
+      <p>R$ 89,90</p>
+    </div>
+  </div>
+
+</div>
+
+ 
+
+
+ 
+
+
+
+
+<br>
+<br>
+<br>
+
+
+  <footer>
+    <div class="icon">🏠</div>
+    <div class="icon">💲</div>
+    <div class="icon">🔔</div>
+    <div class="icon">👤</div>
+  </footer>
+
+
+</body>
+</html>

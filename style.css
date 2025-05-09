@@ -1,0 +1,310 @@
+:root {
+    --roxo-claro: #e6e0f8;
+    --roxo-medio: #b39ddb;
+    --roxo-escuro: #673ab7;
+    --branco: #ffffff;
+    --cinza-claro: #f5f5f5;
+    --cinza-borda: #ccc;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+  }
+  
+  
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid var(--roxo-claro);
+    background-color: var(--branco);
+    color: #333;
+  }
+
+
+
+
+
+
+
+
+.hamburguer {
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #fff;
+}
+
+.filter-menu {
+  display: none;
+  background: #eee;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.filter-menu.show {
+  display: block;
+}
+
+
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu li {
+  cursor: pointer;
+  margin: 5px 0;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+ 
+ 
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  
+ 
+
+
+
+
+
+
+
+  .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: #6a0dad;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* fundo branco para destacar a imagem */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card .info {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.card .info h3 {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.card .info p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--roxo-escuro);
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--roxo-medio);
+    padding: 10px 0;
+  }
+  
+  footer .icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--branco);
+  }
+
+
+
+  
+  /* ... mantenha os estilos anteriores ... */
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  /* Filtro lateral */
+  .filter-menu {
+    position: fixed;
+    top: 90px;
+    left: -220px;
+    width: 200px;
+    background-color: var(--roxo-claro);
+    border-right: 1px solid var(--roxo-medio);
+    padding: 15px;
+    transition: left 0.3s;
+    z-index: 10;
+  }
+  
+  .filter-menu.show {
+    left: 0;
+  }
+  
+  .filter-menu h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--roxo-escuro);
+  }
+  
+  .filter-menu ul {
+    list-style: none;
+  }
+  
+  .filter-menu li {
+    padding: 8px 0;
+    cursor: pointer;
+    color: var(--roxo-escuro);
+    border-bottom: 1px solid var(--roxo-medio);
+  }
+  
+  .filter-menu li:hover {
+    background-color: var(--roxo-medio);
+    color: white;
+  }
+
+
+
+
+
+
+  
+
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .carousel {
+
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-img {
+    min-width:300px;
+    height: 100%
+  }
+  
+  .prev, .next {
+    padding: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
