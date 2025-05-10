@@ -42,6 +42,12 @@ function filterProducts(filtro) {
 
 
 
+
+
+
+
+
+
   
 
 let index = 0;
