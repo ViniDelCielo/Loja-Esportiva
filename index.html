@@ -35,12 +35,42 @@
 </ul>
 
       <li onclick="filterProducts('Bermudas')">Bermudas</li>
+
       <li onclick="filterProducts('Calças')">Calças</li>
-      <li onclick="filterProducts('Chuteiras')">Chuteiras</li>
+
+
+
+    <li onclick="toggleSubmenu('chuteirasSubmenu')">Chuteiras</li>
+    <ul id="chuteirasSubmenu" class="submenu">
+
+        <li onclick="toggleSubmenu('societySubmenu')">• Society</li>
+        <ul id="societySubmenu" class="submenu">
+          <li onclick="filterProducts('SocietyCanoAlto')">– Cano Alto</li>
+          <li onclick="filterProducts('SocietyCanoBaixo')">– Cano Baixo</li>
+          <li onclick="filterProducts('Chuteiras')">– Todas Society</li>
+
+        </ul>
+      </li>
+      
+        <li onclick="toggleSubmenu('campoSubmenu')">• Campo</li>
+        <ul id="campoSubmenu" class="submenu">
+          <li onclick="filterProducts('CampoCanoAlto')">– Cano Alto</li>
+          <li onclick="filterProducts('CampoCanoBaixo')">– Cano Baixo</li>
+        </ul>
+      </li>
+      
+        <li onclick="toggleSubmenu('futsalSubmenu')">• Futsal</li>
+        <ul id="futsalSubmenu" class="submenu">
+          <li onclick="filterProducts('FutsalCanoAlto')">– Cano Alto</li>
+          <li onclick="filterProducts('FutsalCanoBaixo')">– Cano Baixo</li>
+        </ul>
+      </li>
+      <li onclick="filterProducts('Chuteiras')">• Todas as Chuteiras</li>
+    </ul>
+  
+
       <li onclick="filterProducts('Tênis')">Tênis</li>
       <li onclick="filterProducts('Acessorios')">Acessórios</li>
-            <li onclick="filterProducts('Luvas')">Luvas</li>
-
       <li onclick="filterProducts('Todos')">Mostrar Todos</li>
     </ul>
   </aside>
@@ -61,8 +91,7 @@
   
  <div class="cards-container">
 
-              <!-- Camisas do Corinthians -->
-
+                                  <!-- Camisas do Corinthians -->
               
   <div class="card produto Camisetas Corinthians">
     <div class="image-container">
@@ -144,7 +173,7 @@
     </div>
   </div>
 
-              <!-- Camisas do Palmeiras -->
+                                  <!-- Camisas do Palmeiras --> 
 
     <div class="card produto Camisetas Palmeiras">
     <div class="image-container">
@@ -226,7 +255,7 @@
     </div>
   </div>
 
-                <!-- Camisas do São Paulo -->
+                                  <!-- Camisas do São Paulo -->
 
    <div class="card produto Camisetas SãoPaulo">
     <div class="image-container">
@@ -308,7 +337,7 @@
     </div>
   </div>
 
-              <!-- Camisas do Santos -->
+                                  <!-- Camisas do Santos -->
 
   <div class="card produto Camisetas Santos">
     <div class="image-container">
@@ -390,13 +419,346 @@
     </div>
   </div>
 
+  
+                                        <!-- Bermudas -->
+
+ <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 1.png" alt="Bermudas 1">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 2.png" alt="Bermudas 2">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 3.png" alt="Bermudas 3">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 4.png" alt="Bermudas 4">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 5.png" alt="Bermudas 5">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 6.png" alt="Bermudas 6">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 7.png" alt="Bermudas 7">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+
+   <div class="card produto Bermudas">
+    <div class="image-container">
+      <img src="Bermudas/Bermuda 8.png" alt="Bermudas 8">
+    </div>
+    <div class="info">
+      <h3>Bermuda 1</h3>
+      <p>R$ 29,90</p>
+    </div>
+  </div>
+  
+                                         <!-- Calças -->
+             
+                                         
+ <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 1.png" alt="Calças 1">
+    </div>
+    <div class="info">
+      <h3>Calça 1</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+    <div class="card produto Calças">
+      <div class="image-container">
+        <img src="Calças/Calça 2.png" alt="Calças 2">
+      </div>
+      <div class="info">
+        <h3>Calça 2</h3>
+        <p>R$ 49,90</p>
+      </div>
+    </div>
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 3.png" alt="Calças 3">
+    </div>
+    <div class="info">
+      <h3>Calça 3</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 4.png" alt="Calças 4">
+    </div>
+    <div class="info">
+        <h3>Calça 4</h3>
+        <p>R$ 49,90</p>
+    </div>
+  </div>
+
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 5.png" alt="Calças 5">
+    </div>
+    <div class="info">
+      <h3>Calça 5</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 6.png" alt="Calças 6">
+    </div>
+    <div class="info">
+      <h3>Calça 6</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 7.png" alt="Calças 7">
+    </div>
+    <div class="info">
+      <h3>Calça 7</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Calças">
+    <div class="image-container">
+      <img src="Calças/Calça 8.png" alt="Calças 8">
+    </div>
+    <div class="info">
+      <h3>Calça 8</h3>
+      <p>R$ 49,90</p>
+    </div>
+  </div>
+
+                                         <!-- Chuteiras Society Cano Alto--> 
+                                      
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 1.png" alt="Society Cano Alto 1">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 1</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 2.png" alt="Society Cano Alto 2">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 2</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 3.png" alt="Chuteiras Cano Alto 3">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 3</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 4.png" alt="Chuteiras Cano Alto 4">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 4</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 5.png" alt="Chuteiras Cano Alto 5">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 5</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 6.png" alt="Chuteiras Cano Alto 6">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 6</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 7.png" alt="Chuteiras Cano Alto 7">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 7</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoAlto">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Alto/Society Cano Alto 8.png" alt="Chuteiras Cano Alto 8">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Alto 8</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+                                         <!-- Chuteiras Society Cano Baixo--> 
+
+
+<div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 1.png" alt="Chuteiras Cano Baixo 1">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 1</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 2.png" alt="Chuteiras Cano Baixo 2">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 1</h3>
+      <p>R$ 299,90</p>2    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 3.png" alt="Chuteiras Cano Baixo 3">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 3</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 4.png" alt="Chuteiras Cano Baixo 4">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 4</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 5.png" alt="Chuteiras Cano Baixo 5">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 5</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 6.png" alt="Chuteiras Cano Baixo 6">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 6</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 7.png" alt="Chuteiras Cano Baixo 7">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 7</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  <div class="card produto Chuteiras societySubmenu SocietyCanoBaixo">
+    <div class="image-container">
+      <img src="Chuteiras Society Cano Baixo/Society Cano Baixo 8.png" alt="Chuteiras Cano Baixo 8">
+    </div>
+    <div class="info">
+      <h3>Chuteira Society Cano Baixo 8</h3>
+      <p>R$ 299,90</p>
+    </div>
+  </div>
+
+  
+
+
+
+
 </div>
 
  
-
-
- 
-
 
 
 

@@ -1,12 +1,13 @@
 
-  function toggleMenu() {
+ function toggleMenu() {
   document.getElementById("filterMenu").classList.toggle("show");
 }
 
-
 function toggleSubmenu(id) {
   const submenu = document.getElementById(id);
-  submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  if (submenu) {
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  }
 }
 
 
@@ -14,15 +15,16 @@ function filterProducts(filtro) {
   const produtos = document.querySelectorAll('.produto');
 
   produtos.forEach(produto => {
-    // Mostrar todas as camisetas (com a classe 'Camisetas')
     if (filtro === 'Mostrar todas as camisetas') {
-      if (produto.classList.contains('Camisetas')) {
-        produto.style.display = 'block';
-      } else {
-        produto.style.display = 'none';
-      }
+      produto.style.display = produto.classList.contains('Camisetas') ? 'block' : 'none';
+
+    } else if (filtro === 'Mostrar todas as chuteiras') {
+      produto.style.display = produto.classList.contains('Chuteiras') ? 'block' : 'none';
+
+      
+
     } else if (filtro === 'Todos') {
-      produto.style.display = 'block';  // Mostrar todos os produtos
+      produto.style.display = 'block';
     } else {
       produto.style.display = produto.classList.contains(filtro) ? 'block' : 'none';
     }
@@ -30,6 +32,7 @@ function filterProducts(filtro) {
 
   toggleMenu(); // Fecha o menu lateral
 }
+
 
 
 
